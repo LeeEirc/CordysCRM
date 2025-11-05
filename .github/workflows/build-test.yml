@@ -45,6 +45,7 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64
           push: true
+          context: .
           provenance: false
           file: installer/Dockerfile
           tags: ${{ env.image_name }}:${{ inputs.tag }}
